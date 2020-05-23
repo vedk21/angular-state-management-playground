@@ -1,0 +1,20 @@
+{
+  "extends": "../../tslint.json",
+  "rules": {
+    "directive-selector": [
+      true,
+      "attribute",
+      "angularStateManagementPlayground",
+      "camelCase"
+    ],
+    "component-selector": [
+      true,
+      "element",
+      "angular-state-management-playground",
+      "kebab-case"
+    ]
+  },
+  "linterOptions": {
+    "exclude": ["!**/*"]
+  }
+}
