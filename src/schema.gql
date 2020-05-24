@@ -1,0 +1,24 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type TVSeriesType {
+  id: ID!
+  title: String!
+  runtime: Int!
+  rating: Float!
+}
+
+type Query {
+  getAllTVSeries: [TVSeriesType!]!
+}
+
+type Mutation {
+  createTVSeries(input: TVSeriesInput!): TVSeriesType!
+}
+
+input TVSeriesInput {
+  title: String!
+  runtime: Int!
+  rating: Float!
+}
