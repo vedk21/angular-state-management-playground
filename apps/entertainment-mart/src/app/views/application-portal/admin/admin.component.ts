@@ -23,7 +23,7 @@ export class AdminComponent implements OnInit {
 
   submit() {
     if (this.tvSeries) {
-      const payload: TVSeries = this.tvSeries;
+      const payload: TVSeries = {...this.tvSeries};
       this.store.dispatch(new AddTVSeries(payload));
     }
   }
